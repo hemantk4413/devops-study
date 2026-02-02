@@ -1,10 +1,12 @@
-What is Terraform : " Is a IAC tools that is used to automate the infrastructure provisining. It allows us to define in configuration what are the resourece need to deploy application and accordingly it provision the resources.
+What is Terraform : 
+" Is a IAC tools that is used to automate the infrastructure provisining. It allows us to define in configuration what are the resourece need to deploy application and accordingly it provision the resources.
 it is a Open source IAC tool provided by hashicorp. it has two core componests . 1 terraform config and terraform State. 
 In configuration we need to define resources that is needed.two types of confg Declarative and imperitive.
 in state file TF keeps the record of current TF configuration/stats/latest action.
 There are few most important commands in TF.
 Terraform refresh, init , validate ,Plan ,apply ,Destroy: 
 
+Commands :
 Refresh : updates the Terraform state file to match the actual, current state of resources in the cloud, It detects drift (manual changes made outside of Terraform's management) and records those changes in the state file without modifying the actual infrastructure
 init : it initilizes the workspace to run the terraform commands
 validate :it verifys the syntax of TF config file is Valid or not.
