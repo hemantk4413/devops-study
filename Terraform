@@ -1,1 +1,27 @@
+What is Terraform : " Is a IAC tools that is used to automate the infrastructure provisining. It allows us to define in configuration what are the resourece need to deploy application and accordingly it provision the resources.
+it is a Open source IAC tool provided by hashicorp. it has two core componests . 1 terraform config and terraform State. 
+In configuration we need to define resources that is needed.two types of confg Declarative and imperitive.
+in state file TF keeps the record of current TF configuration/stats/latest action.
+There are few most important commands in TF.
+Terraform refresh, init , validate ,Plan ,apply ,Destroy: 
+
+Refresh : updates the Terraform state file to match the actual, current state of resources in the cloud, It detects drift (manual changes made outside of Terraform's management) and records those changes in the state file without modifying the actual infrastructure
+init : it initilizes the workspace to run the terraform commands
+validate :it verifys the syntax of TF config file is Valid or not.
+Plan : it genrated the execution plan that is going to be genrated.what will be updated,created,destroyed.
+Apply : execute the plan proposed in configuration it may be creation deletion updates etc.
+Destroy : used to permanantly delete targated resources from infra.
+
+Benifits of Terraform :
+1. Multi Cloud & Hybrid Cloud support
+2. IAC : provision resources ,human readable config file that can be re used,shared like code, and Versioned.
+3. Reproducibility: once infra tested in Dev env same can be provisioned till tst uat prod without any configuration drift.
+4: Reuseability: once config file is created it can be re used to provision infra.
+5. Predictive change : TF Plan genrates execution plan so that we can predict what resource going to provisioned which reduces human errors.
+6. Cost Management : reuse od modules prevents over provision and rersource utilization by inforsing policies.
+7. Automation : TF automates the process resource provising,updating and deletion by eliminating manual process and reduce the human error.tht gives faster deployment. 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TF config file : 
+
+
 
