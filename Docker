@@ -1,0 +1,9 @@
+From : create image from ready made python image e.g : FROM python:3.9-slim  -install python into our image.(Every img is base of another img)
+ENV :Defining environmental variables in our docker image for e.g : defining /setting user credentials.
+RUN  :execute any linux commnds which we want e.g : create dir /folder copy files to folder inside container
+COPY : copy . home/app ---->>  copy file from host machine to container img
+CMD : ["python", "app.py"]  -->> it is a entrypoint command runs server/Start app with python command.thats it.
+WORKDIR /app  :it sets dirrectory as working directory so rest commands will in inside.
+EXPOSE : It indicates which ports are intended for network services, using either TCP (default) or UDP protocols.To make the port accessible from the host, the user must explicitly publish it using the -p or -P flags when running the container (e.g., docker run -p 8080:80
+ENTRYPOINT : makes/configure container to run as an executable.This makes the image behave like a standalone executable. For example, if you set ENTRYPOINT ["ping"], you can simply run docker run myimage google.com, and the container will execute ping google.com
+
