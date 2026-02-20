@@ -5,13 +5,16 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     """Root endpoint that returns a welcome message"""
+<<<<<<< HEAD
     return jsonify(message="Welcome to Main Branch - DevOps App!", author="main")
+=======
+    return jsonify(message="Hello from conflict-test branch!", version="2.0")
+>>>>>>> conflict-test
 
 @app.route('/api/health')
  def health():
      """Health check """
      return jsonify(status="healthy", version="1.0.0")
-
 @app.route('/api/users')
 def get_users():
     """Get a list of sample users"""
