@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     """Root endpoint that returns a welcome message"""
-    return jsonify(message="Welcome to the DevOps Study App!")
+    return jsonify(message="Welcome to Main Branch - DevOps App!", author="main")
 
 @app.route('/api/health')
  def health():
