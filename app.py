@@ -7,10 +7,10 @@ def home():
     """Root endpoint that returns a welcome message"""
     return jsonify(message="Welcome to the DevOps Study App!")
 
-# #@app.route('/api/health')
-# def health():
-#     """Health check """
-#     return jsonify(status="healthy", version="1.0.0")
+@app.route('/api/health')
+ def health():
+     """Health check """
+     return jsonify(status="healthy", version="1.0.0")
 
 @app.route('/api/users')
 def get_users():
